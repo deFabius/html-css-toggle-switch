@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div id="my-checkbox" class="checkbox checkbox-off-selected">
+				<div class="checkbox-slider">
+				<span class="checkbox-on">YES</span><!--
+					--><span class="checkbox-handle"></span><!--
+					--><span class="checkbox-off">NO</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+var cb = document.getElementById('my-checkbox');
+cb.addEventListener("mouseup", function(){
+	var actualState = cb.className.split(" ").pop();
+	cb.className = 'checkbox ' + ((/on/.test(actualState)) ? 'checkbox-off-selected' : 'checkbox-on-selected');
+});
+
+</script>
+</body>
+</html>

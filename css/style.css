@@ -1,0 +1,57 @@
+body{
+	font-family: Helvetica;
+}
+
+.checkbox {
+	border: 1px solid #eee;
+	border-radius: 1.2em;
+	height: 2em;
+	width: 5.4em;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #fff;
+}
+
+.checkbox > .checkbox-slider {
+	width: 8.7em;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+    -webkit-transition: left .3s, background-color .3s; /* For Safari 3.1 to 6.0 */
+    transition: left .3s, background-color .3s;
+}
+
+.checkbox.checkbox-on-selected > .checkbox-slider {
+	background-color: #2ecc71;
+	left: 0;
+}
+
+.checkbox.checkbox-off-selected > .checkbox-slider {
+	background-color: #e74c3c;
+	left: -3.4em;
+}
+
+.checkbox > .checkbox-slider > span {
+	display: inline-block;
+	width: 2.6em;
+	padding: .4em;
+	margin: 0;
+	text-align: center;
+	float: left;
+}
+
+.checkbox > .checkbox-slider > .checkbox-handle {
+	width: 1.2em;
+	height: 1.2em;
+	margin: .33em;
+	background-color: #fff;
+	border: 0 solid #fff;
+	border-radius: .6em;
+	box-sizing: border-box;
+	padding: 0;
+	cursor: pointer;
+}
