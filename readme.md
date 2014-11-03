@@ -5,4 +5,4 @@
 
 ## License
 
-[GPL](./LICENSE).
+[GPL](./LICENSE.md).
