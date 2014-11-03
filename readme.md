@@ -5,4 +5,4 @@
 
 ## License
 
-[MIT](./LICENSE).
+[GPL](./LICENSE).
